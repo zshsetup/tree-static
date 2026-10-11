@@ -1,0 +1,16 @@
+The code in this repository (build.sh, tests/, README.md) is licensed under the MIT License;
+see LICENSE.
+
+The tree binaries produced by build.sh and published under GitHub Releases embed or are built
+from the following third-party projects, vendored unmodified as git submodules under vendor/ at
+their release tags. Each keeps its own license, and the binaries are governed by the licenses of
+these projects, not by the MIT License above.
+
+tree
+  https://github.com/Old-Man-Programmer/tree
+  Copyright (c) Steve Baker and contributors
+  License: GNU General Public License v2.0 or later (GPL-2.0-or-later)
+
+Anyone who redistributes these binaries (including the release archives from this repo) must
+satisfy these licenses, such as keeping their notices attached. The release workflow attaches the
+exact vendored sources used for the build (tree-static-sources.tar.gz) to every release.

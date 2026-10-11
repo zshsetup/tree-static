@@ -1,0 +1,4 @@
+[submodule "vendor/tree"]
+    path = vendor/tree
+    url = https://github.com/Old-Man-Programmer/tree.git
+    shallow = true

@@ -1,0 +1,22 @@
+>>> cleaning /Users/tim/.cache/pmgspecs-work/repos/tree-static/build and /Users/tim/.cache/pmgspecs-work/repos/tree-static/dist
+>>> preparing tree (2.3.2)
+>>> tree
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o color.o color.c
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o file.o file.c
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o filter.o filter.c
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o hash.o hash.c
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o html.o html.c
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o info.o info.c
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o json.o json.c
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o list.o list.c
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o tree.o tree.c
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o unix.o unix.c
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o util.o util.c
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o xml.o xml.c
+zig cc -Os -std=c11 -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o strverscmp.o strverscmp.c
+zig cc -s -o tree color.o file.o filter.o hash.o html.o info.o json.o list.o tree.o unix.o util.o xml.o strverscmp.o
+
+>>> done: /Users/tim/.cache/pmgspecs-work/repos/tree-static/dist/bin/tree
+tree v2.3.2 © 1996 - 2026 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
+/Users/tim/.cache/pmgspecs-work/repos/tree-static/dist/bin/tree:
+    /usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)
