@@ -11,3 +11,11 @@ Thumbs.db
 env/
 
 # custom exclusions
+
+# build output
+build/
+build-static/
+dist/
+dist-static/
+*.log
+.zig-cache/
