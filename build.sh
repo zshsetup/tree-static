@@ -127,4 +127,9 @@ if [ "$OS" = Linux ]; then
   fi
 else
   otool -L "$BIN"
+  # only the system may supply libraries, not Homebrew or /usr/local
+  if otool -L "$BIN" | tail -n +2 | grep -q -v -E '^[[:space:]]+(/usr/lib/|/System/)'; then
+    echo "ERROR: tree links a library that is not part of macOS" >&2
+    exit 1
+  fi
 fi
